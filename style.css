@@ -1,0 +1,169 @@
+/* Global Styles */
+:root {
+    --main-color: #2e2e2e;
+    --accent-color: #ff69b4;
+    --text-color: #e0e0e0;
+    --form-background-color: #1b1b1b;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+    text-align: center;
+    position: relative;
+    height: 100vh; /* Make header take up the entire viewport height */
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/alysa-bajenaru-88IV5AtWjB8-unsplash.jpg') no-repeat center center; /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    z-index: 0;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(46, 46, 46, 0.5), rgba(46, 46, 46, 0.9));
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 5em;
+    font-family: "Water Brush", cursive;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+.bio {
+    margin: 40px 0;
+}
+
+.bio img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-align: center; /* Center align text */
+}
+
+.fab.fa-instagram {
+    font-size: 24px; /* Adjust size */
+    color: #E1306C; /* Instagram color */
+    margin-right: 10px;
+}
+
+/* Contact Section */
+.contact {
+    margin: 40px 0;
+    text-align: center;
+    clear: both;
+}
+
+.contact a {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.contact-form {
+    background-color: var(--form-background-color);
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* More rounded corners */
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 20px auto; /* Adjusted margin */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #e05894; /* Slightly darker pink */
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em; /* Slightly larger for small screens */
+    }
+
+    .bio img {
+        max-width: 90%; /* Better image scaling */
+    }
+
+    .contact a {
+        font-size: 1em;
+    }
+
+    .contact-form {
+        padding: 20px; /* Adjusted padding */
+    }
+}

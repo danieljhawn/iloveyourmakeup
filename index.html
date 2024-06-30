@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - I Love Your Makeup</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./contact-form.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>I Love Your Makeup</h1>
+        </header>
+
+        <section class="bio background-image">
+            <img src="images/IMG_0508.JPG" alt="Portrait of Ryan">
+            <div class="bio-text">
+                <p>Hi, I'm Ryan! People stop me all the time to compliment me on my makeup, and that's probably how
+                    you found this website!</p>
+                <p>I specialize in skincare, makeup, and teaching women how to bring out their best qualities. With
+                    years of experience in the industry, I've had the pleasure of working with all skin tones and types,
+                    helping women achieve healthy, radiant complexions. My passion for skincare and makeup goes back as
+                    far as I can remember, and it's what drives me to share my knowledge with others.</p>
+                <p>The most rewarding part of my work is witnessing the transformation that happens when I see a
+                    person's self-esteem rise as they see their fresh look in the mirror. It's not just about enhancing
+                    features; it's about boosting confidence and seeing my clients leave with a renewed sense of
+                    self-assurance. As a MAC certified makeup artist and a certified Lashify Pro, I have the skills and
+                    expertise to deliver exceptional results.</p>
+                <p>Whether it's developing a personalized skincare routine or creating a stunning look for a special
+                    event, I'm committed to bringing out the best in everyone's natural beauty. Let's work together to
+                    reveal the most confident, beautiful version of you.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <a href="https://www.instagram.com/bonny.mnemonic/" target="_blank">
+                <i class="fab fa-instagram"></i> Follow me on Instagram
+            </a>
+            <form id="contact-form" class="contact-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+                <p id="success-message" style="display:none; color:green;">Your message was sent successfully!</p>
+                <p id="error-message" style="display:none; color:red;">There was a problem sending your message.</p>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
