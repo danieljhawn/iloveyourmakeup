@@ -20,17 +20,17 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
 }
 
 header {
-    display: flex; /* Add this line */
-    justify-content: center; /* Add this line */
-    align-items: center; /* Add this line */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
-    height: 100vh; /* Make header take up the entire viewport height */
-    overflow: hidden; /* Ensure content does not overflow */
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 header::before {
@@ -40,9 +40,9 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/images/alysa-bajenaru-88IV5AtWjB8-unsplash.jpg') no-repeat center center; /* Replace with your image URL */
+    background: url('/images/alysa-bajenaru-88IV5AtWjB8-unsplash.jpg') no-repeat center center; 
     background-size: cover;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed; Parallax effect
     background-position: center;
     z-index: 0;
 }
@@ -85,12 +85,12 @@ header h1 {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 1em;
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 
 .fab.fa-instagram {
-    font-size: 24px; /* Adjust size */
-    color: #E1306C; /* Instagram color */
+    font-size: 24px; 
+    color: #E1306C;
     margin-right: 10px;
 }
 
@@ -109,11 +109,11 @@ header h1 {
 
 .contact-form {
     background-color: var(--form-background-color);
-    padding: 30px; /* Increased padding for better spacing */
-    border-radius: 10px; /* More rounded corners */
+    padding: 30px; 
+    border-radius: 10px; 
     color: var(--text-color);
     max-width: 600px;
-    margin: 20px auto; /* Adjusted margin */
+    margin: 20px auto; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
@@ -127,7 +127,7 @@ header h1 {
 
 .contact-form input,
 .contact-form textarea {
-    width: calc(100% - 20px); /* Adjusted for padding */
+    width: calc(100% - 20px); 
     padding: 10px;
     margin: 10px 0 20px 0;
     border: 1px solid var(--main-color);
@@ -147,16 +147,16 @@ header h1 {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #e05894; /* Slightly darker pink */
+    background-color: #e05894; 
 }
 
 @media (max-width: 600px) {
     header h1 {
-        font-size: 2.5em; /* Slightly larger for small screens */
+        font-size: 2.5em;
     }
 
     .bio img {
-        max-width: 90%; /* Better image scaling */
+        max-width: 90%; 
     }
 
     .contact a {
@@ -164,6 +164,6 @@ header h1 {
     }
 
     .contact-form {
-        padding: 20px; /* Adjusted padding */
+        padding: 20px; 
     }
 }
